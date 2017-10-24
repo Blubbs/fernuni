@@ -35,12 +35,12 @@ begin
 
 { Fuehren Sie das Programm geeignet weiter! }
 
-  i := 1; {Zähler Feld1}
-  j := 1; {Zähler Feld2}
-  k := 1; {Zähler ErgebnisFeld}
+  i := 1; {ZÃ¤hler Feld1}
+  j := 1; {ZÃ¤hler Feld2}
+  k := 1; {ZÃ¤hler ErgebnisFeld}
  
   while (i <> 6) and (j <> 9) do
-  {Zahlen sortiert zum ErgebnisFeld hinzufügen bis Feld1 oder Feld2
+  {Zahlen sortiert zum ErgebnisFeld hinzufÃ¼gen bis Feld1 oder Feld2
    abgearbeitet wurde.}
   begin
     if Feld1[i] < Feld2[j] then
@@ -58,11 +58,11 @@ begin
   end;{while-Schleife}
 
   if i = 6 then
-  {Feld1 abgearbeitet, Feld2 hinzufügen}
+  {Feld1 abgearbeitet, Feld2 hinzufÃ¼gen}
     for k := k to ERGEBNISFELDLAENGE do  
       ErgebnisFeld[k] := Feld2[k - 5]
   else
-  {j = 9 somit Feld2 abgearbeitet, Feld1 hinzufügen}
+  {j = 9 somit Feld2 abgearbeitet, Feld1 hinzufÃ¼gen}
     for k := k to ERGEBNISFELDLAENGE do  
       ErgebnisFeld[k] := Feld1[k - 8];
   
